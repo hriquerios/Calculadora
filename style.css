@@ -1,0 +1,67 @@
+* { /* O simbolo de * significa que irá formatar todos os elementos */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 2.5%;
+}
+
+.fundo { /* Irá estilizar toda a página de fundo */
+    background-image: linear-gradient(45deg, rgb(27, 25, 25), rgb(160, 89, 196)); /* Define a cor do fundo da página */
+    height: 100vh; /* Vh é V = view, H = height que significa altura, então 100vh é toda altura visível do seu navegador.*/
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.calculadora { /* Estiliza o formato da calculadora */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); /* Red Green Blue Alpha. O A serve para definir a transparência de 0 a 1 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Deixa a calculadora ocupando o centro da tela. Volta -50% no eixo X e -50% no eixo Y */
+    border-radius: 15px; /* Arredonda as bordas da calculadora */
+    padding: 15px;
+}
+
+.botao { /* Estiliza todos os botões da calculadora, exceto pelo botão de igual */
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer; /* Quando passa o mouse por cima ele muda o cursor, transformando a setinha em mãozinha */
+    margin: 3px; /* Define a altura da margem entre os botões */
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+
+.botaoigual { /* Estiliza apenas o botão de igual */
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer; /* Quando passa o mouse por cima ele muda o cursor, transformando a setinha em mãozinha */
+    margin: 3px; /* Define a altura da margem entre os botões */
+    background-color: rgb(156, 34, 34);
+    border: none;
+    color: white;
+}
+
+.botao:hover { /* O hover aplica um estilo a um elemento quando o mouse é passado sobre ele */
+    background-color: black; /* Toda vez que o mouse passar por cima de um botão ele ficará na cor preta */
+}
+
+.botaoigual:hover { /* O hover aplica um estilo a um elemento quando o mouse é passado sobre ele */
+    background-color: rgb(88, 9, 9); /* Toda vez que o mouse passar por cima de um botão ele ficará na cor vinho */
+}
+
+#resultado { /* Ele puxa o ID resultado de dentro do HTML*/
+    width: 214px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
